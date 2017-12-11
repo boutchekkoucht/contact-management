@@ -1,0 +1,9 @@
+.navbar-inverse{
+    background-color:rgba(238, 123, 16, 0.884);
+    border: 0px rgba(238, 123, 16, 0.884) solid !important;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.navbar-inverse *{
+    color:white;  
+}

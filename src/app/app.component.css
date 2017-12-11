@@ -1,0 +1,9 @@
+.body-container{
+    height: 75vh;
+    position: relative;
+}
+.left-menu{
+    height: 74vh;
+    background-color:#5bc0de;
+    padding-right:0px !important;
+}

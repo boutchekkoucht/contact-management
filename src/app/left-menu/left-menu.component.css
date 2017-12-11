@@ -1,0 +1,19 @@
+.contact{
+    background-color: rgb(133, 130, 130);
+    color: white;
+
+}
+.contact li{
+    padding: 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid;
+
+}
+.contact ul{
+    
+    -webkit-padding-start: 0px !important;
+}
+.contact li:hover{
+    background-color:rgb(73, 71, 71);
+}
