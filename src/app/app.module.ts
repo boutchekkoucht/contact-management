@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactServiceService } from './services/contact-service.service';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -18,9 +21,11 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ContactServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

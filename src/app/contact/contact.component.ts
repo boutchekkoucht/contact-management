@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Contact} from '../contact/models/Contact';
+import { Contact } from '../models/Contact';
+import { ContactServiceService } from '../services/contact-service.service';
+import { ContactFactory } from '../factories/ContactFactory';
 
 
 @Component({
@@ -8,18 +10,15 @@ import {Contact} from '../contact/models/Contact';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
-  constructor() {
-    this.contacts = [];
-   }
   contacts:Contact[];
+  constructor(private _contactServiceService:ContactServiceService) { 
+   }
+  
 
   ngOnInit() {
-    let a = new Contact(1, 'Mohammed', 'BOUTCHEKKOUCH', 'boutchekkoucht@gmail.com', 'dwar ayt said', 'EL hajeb');
-    let b = new Contact(2, 'Mohammed', 'BOUTCHEKKOUCH', 'boutchekkoucht@gmail.com', 'dwar ayt said', 'EL hajeb');
-    this.contacts.push(a);
-    this.contacts.push(b);
-    
+    this._contactServiceService.getAllContacts().subscribe(response => {
+      this.contacts = ContactFactory.toContactArray(response);
+    });
   }
 
 }
