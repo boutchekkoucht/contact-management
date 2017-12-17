@@ -1,7 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { Contact } from '../models/Contact';
-import { ContactServiceService } from '../services/contact-service.service';
-import { ContactFactory } from '../factories/ContactFactory';
+import { Contact } from '../../../models/Contact';
+import { ContactServiceService } from '../../../services/contact-service.service';
+import { ContactFactory } from '../../../factories/ContactFactory';
 import { FormsModule } from '@angular/forms';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';

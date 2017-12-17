@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../models/Contact';
-import { ContactServiceService } from '../services/contact-service.service';
+import { Contact } from '../../../models/Contact';
+import { ContactServiceService } from '../../../services/contact-service.service';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({

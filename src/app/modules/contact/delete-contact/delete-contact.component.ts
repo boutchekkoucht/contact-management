@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
-import { ContactServiceService } from '../services/contact-service.service';
+import { ContactServiceService } from '../../../services/contact-service.service';
 
 @Component({
   selector: 'app-delete-contact',

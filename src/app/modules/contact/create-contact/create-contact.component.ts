@@ -1,8 +1,8 @@
 import {Router} from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../models/Contact';
+import { Contact } from '../../../models/Contact';
 import { FormsModule } from '@angular/forms';
-import { ContactServiceService } from '../services/contact-service.service';
+import { ContactServiceService } from '../../../services/contact-service.service';
 
 
 @Component({
