@@ -12,7 +12,9 @@ export class Contact{
     private createdAt:Date
     private address: Address
 
-    constructor(){}
+    constructor(){
+        this.address = new Address();
+    }
 
     getId():number{
         return this.id;

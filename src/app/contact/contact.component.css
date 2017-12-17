@@ -1,0 +1,9 @@
+.fa{
+    cursor: pointer;
+}
+.fa-trash{
+    color:rgb(112, 14, 14);
+}
+.fa-pencil{
+    color: green;
+}

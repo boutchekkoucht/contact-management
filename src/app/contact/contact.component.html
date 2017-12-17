@@ -5,12 +5,17 @@
         <th>LAST NAME</th>
         <th>EMAIL</th>
         <th>PHONE</th> 
+        <th>Action</th>
       </tr>
       <tr *ngFor="let contact of contacts">
-          <th>{{contact.firstName}}</th>
-          <th>{{contact.lastName}}</th>
-          <th>{{contact.email}}</th>
-          <th>{{contact.phone}}</th> 
+          <td>{{contact.firstName}}</td>
+          <td>{{contact.lastName}}</td>
+          <td>{{contact.email}}</td>
+          <td>{{contact.phone}}</td>
+          <td> 
+            <span class="fa fa-trash" (click)="deleteContact(contact.id)"></span>
+            <span class="fa fa-pencil" (click)="editContact(contact)"></span>
+          </td> 
       </tr>
     </table>
 </div>

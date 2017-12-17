@@ -5,9 +5,9 @@ import { ContactComponent } from '../contact/contact.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/allContacts', pathMatch: 'full' },
-  { path: 'newContact', component: CreateContactComponent },
-  { path: 'allContacts', component:  ContactComponent }
+  { path: '', redirectTo: '/all-contacts', pathMatch: 'full' },
+  { path: 'new-contact', component: CreateContactComponent },
+  { path: 'all-contacts', component:  ContactComponent }
 ];
 
 

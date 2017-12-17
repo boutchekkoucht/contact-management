@@ -3,6 +3,10 @@
     color: white;
 
 }
+.contact a{
+    color: white;
+    text-decoration: none;
+}
 .contact li{
     padding: 10px 0px;
     font-weight: bold;
