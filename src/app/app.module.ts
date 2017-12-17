@@ -1,3 +1,4 @@
+import {AppRoutingModule} from './app-routing/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactServiceService } from './services/contact-service.service';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { CreateContactComponent } from './create-contact/create-contact.component';
 
 
 @NgModule({
@@ -18,12 +20,14 @@ import { HttpModule } from '@angular/http';
     FooterComponent,
     HeaderComponent,
     LeftMenuComponent,
-    ContactComponent
+    ContactComponent,
+    CreateContactComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [ContactServiceService],
   bootstrap: [AppComponent]
